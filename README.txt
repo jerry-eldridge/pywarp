@@ -1,6 +1,6 @@
 README.txt
 
-This is a library to warp an image.
+This is a Python 2.7 library to warp an image.
 
 If warp.dll (aka warp.pyd) and warp.lib aren't created, then create
 one with warp.sln in the ./src folder. Then read helper.bat and
@@ -34,7 +34,7 @@ or other recognized by cv2. Look at Creating a Warp Image...
 but still useful.
 
 Required packages are Numpy and OpenCv2 python (copy
-cv2.pyd to Python package if not already their).
+cv2.pyd to Python package if not already their). And Python 2.7.
 
 The package uses a scalar field U which is M x M in length
 list of doubles and a image file fn. It creates a M x M grid
