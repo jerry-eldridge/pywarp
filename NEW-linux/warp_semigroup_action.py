@@ -56,7 +56,9 @@ def Schwartzschild(mass, M = 10):
     a5 = array(u5)
     a5 = a5.reshape((M,M))
     b5 = zeros((M,M),dtype='uint8')
-    cv2.cv.Convert(cv2.cv.fromarray(a5), cv2.cv.fromarray(b5))
+    for j in range(a5.shape[1]):
+        for i in range(a5.shape[0]):
+            b5[i,j] = a5[i,j]
     warputil.WarpClose(ms=1,msg=False)
     return u5,b5
 
